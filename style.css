@@ -6,6 +6,28 @@ strong {
     font-weight: 700;
 }
 
+object {
+    width: 5rem;
+    padding-bottom: 0;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+button {
+    display: flex;
+    background-color: #1D0C20;
+    color: #FFFFFD;
+    margin: auto;
+    border-radius: 0.2rem;
+    width: 50%;
+    padding: 0.4rem;
+    justify-content: center;
+    margin-bottom: 0.4rem;
+    cursor: pointer;
+    padding: 0.7rem 2.5rem;
+    border: none;
+}
+
+
 input {
     width: 60%;
     margin: 0.75rem;
@@ -14,6 +36,10 @@ input {
     border-radius: 0.3rem;
     font-size: 1rem;
     border: none;
+}
+
+input:focus {
+    outline: none;
 }
 
 .container {
@@ -82,23 +108,24 @@ input {
     text-align: center;
 }
 
-.cards {
+.card {
     display: flex;
     justify-content: space-around;
     padding: 0.9rem;
+    border-radius: 20px; 
 }
 
 .card-1, .card-2, .card-3 {
-    border-radius: 5px;
     background-image: linear-gradient(180deg, #4670F1, #61A9F9);
-    border: 7px solid;
+    border: 7px solid transparent;
     border-image: linear-gradient(45deg, #342A89, #2738DB) 10;
     text-align: center;
     width: 25%;
-    margin-right: 10px;
+    margin-right: 10px
 }
-
 .card-title {
 color: #FFFFFD;
 padding: 1rem;
+font-size: 1rem;
 }
+
